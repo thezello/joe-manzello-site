@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Joe Manzello — Author of The Art of Detachment. Literary fiction and nonfiction for men rebuilding after collapse. Forged truth. No noise.">
+<title>Joe Manzello — Author</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Barlow+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#0f0d08;color:#cec5ae;font-family:'EB Garamond',Georgia,serif;font-size:17px;line-height:1.8}
+
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 3rem;border-bottom:0.5px solid #221e12;background:#0f0d08;position:sticky;top:0;z-index:100}
+.nav-logo{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#f0e2c0;text-decoration:none}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#6b5a38;text-decoration:none;transition:color 0.15s}
+.nav-links a:hover{color:#c09050}
+.nav-cta{color:#c09050 !important;border:0.5px solid #3a2a10;padding:5px 14px;border-radius:2px;transition:background 0.15s !important}
+.nav-cta:hover{background:#1e1408 !important}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:580px;border-bottom:0.5px solid #221e12}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:5rem 3rem 5rem 3.5rem}
+.hero-eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.35em;text-transform:uppercase;color:#5a4820;margin-bottom:1.5rem}
+.hero-name{font-family:'Barlow Condensed',sans-serif;font-size:clamp(56px,9vw,92px);font-weight:700;text-transform:uppercase;line-height:0.9;color:#f0e2c0;margin-bottom:1.75rem;letter-spacing:-0.01em}
+.hero-tagline{font-family:'EB Garamond',serif;font-style:italic;font-size:21px;color:#9a8660;line-height:1.5;margin-bottom:2.5rem;max-width:340px}
+.hero-rule{width:36px;height:1px;background:#5a3e14}
+.hero-right{position:relative;overflow:hidden;background:#0a0804}
+.hero-right img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:sepia(0.5) contrast(1.08) brightness(0.65)}
+.hero-fade{position:absolute;inset:0;background:linear-gradient(to right,#0f0d08 0%,transparent 35%)}
+
+.book-section{background:#0f0d08;border-top:0.5px solid #1e1a0e;border-bottom:0.5px solid #1e1a0e}
+.book-inner{max-width:940px;margin:0 auto;padding:5rem 3rem;display:grid;grid-template-columns:240px 1fr;gap:4rem;align-items:center}
+.book-cover{width:100%;border-radius:3px;display:block;filter:contrast(1.05)}
+.book-label{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.32em;text-transform:uppercase;color:#8a6030;margin-bottom:1rem}
+.book-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(36px,5vw,56px);font-weight:700;text-transform:uppercase;color:#f0e2c0;line-height:0.95;margin-bottom:1.25rem}
+.book-desc{font-size:18px;color:#9a8a6a;line-height:1.85;margin-bottom:2rem;max-width:480px}
+.btn-row{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.btn-primary{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:#f0e2c0;background:#3a2808;border:0.5px solid #6b4a1a;padding:12px 28px;cursor:pointer;border-radius:2px;text-decoration:none;display:inline-block;transition:background 0.15s}
+.btn-primary:hover{background:#4a3410}
+.btn-ghost{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#7a6040;border:0.5px solid #2e2410;padding:11px 22px;cursor:pointer;border-radius:2px;text-decoration:none;display:inline-block;transition:all 0.15s}
+.btn-ghost:hover{color:#c09050;border-color:#5a3e14}
+
+.work-section{max-width:940px;margin:0 auto;padding:5rem 3rem}
+.sec-label{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.32em;text-transform:uppercase;color:#5a4020;margin-bottom:2rem}
+.sec-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(32px,5vw,52px);font-weight:700;text-transform:uppercase;color:#f0e2c0;line-height:1;margin-bottom:1.5rem}
+.sec-body{font-size:18px;color:#b8ad95;line-height:1.9;max-width:620px}
+.sec-body p{margin-bottom:1.1rem}
+.sec-body p:last-child{margin-bottom:0}
+.sec-body strong{color:#f0e2c0;font-weight:500}
+
+hr.div{border:none;border-top:0.5px solid #1e1a0e;margin:0}
+
+.lead-section{background:#0c0a06;border-top:0.5px solid #221e12;border-bottom:0.5px solid #221e12}
+.lead-inner{max-width:600px;margin:0 auto;padding:5.5rem 3rem;text-align:center}
+.lead-inner .sec-label{text-align:center}
+.lead-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(28px,4vw,44px);font-weight:700;text-transform:uppercase;color:#f0e2c0;line-height:1;margin-bottom:1rem}
+.lead-sub{font-size:17px;color:#9a8a6a;line-height:1.85;margin-bottom:2.5rem}
+.lead-form{display:flex;flex-direction:column;gap:0.75rem;max-width:420px;margin:0 auto}
+.lead-form input{background:#141008;border:0.5px solid #2e2410;border-radius:2px;padding:12px 16px;font-family:'EB Garamond',serif;font-size:16px;color:#cec5ae;outline:none;transition:border-color 0.15s;width:100%}
+.lead-form input::placeholder{color:#4a3820}
+.lead-form input:focus{border-color:#5a3e14}
+.lead-form button{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:#0f0d08;background:#c09050;border:none;padding:13px 28px;cursor:pointer;border-radius:2px;transition:background 0.15s;width:100%}
+.lead-form button:hover{background:#d4a860}
+.lead-note{font-size:13px;color:#3a2e18;margin-top:0.75rem;font-style:italic}
+
+.books-section{max-width:940px;margin:0 auto;padding:5rem 3rem}
+.books-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin-top:2.5rem}
+.book-card{background:#0c0a06;border:0.5px solid #221e12;border-radius:3px;padding:1.5rem}
+.book-card.live{border-color:#3a2a10}
+.bc-badge{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#4a3818;margin-bottom:0.6rem}
+.bc-badge.live{color:#8a6030}
+.bc-title{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;text-transform:uppercase;color:#f0e2c0;line-height:1.15;margin-bottom:0.6rem}
+.bc-desc{font-size:14px;color:#6a5a3a;line-height:1.65}
+.bc-btn{display:inline-block;margin-top:1rem;font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#c09050;border:0.5px solid #3a2a10;padding:6px 14px;border-radius:2px;cursor:pointer;background:transparent;text-decoration:none;transition:background 0.15s}
+.bc-btn:hover{background:#1e1408}
+
+.bio-section{background:#0f0d08;border-top:0.5px solid #1e1a0e}
+.bio-inner{max-width:940px;margin:0 auto;padding:5rem 3rem;display:grid;grid-template-columns:280px 1fr;gap:4rem;align-items:start}
+.bio-photo{width:100%;border-radius:3px;filter:sepia(0.4) contrast(1.08) brightness(0.8)}
+.bio-quote{font-family:'EB Garamond',serif;font-style:italic;font-size:21px;color:#8a7050;line-height:1.55;margin-bottom:2rem;padding-left:1.25rem;border-left:2px solid #3a2808;border-radius:0}
+.bio-body{font-size:18px;color:#b8ad95;line-height:1.9}
+.bio-body p{margin-bottom:1.1rem}
+.bio-body p:last-child{margin-bottom:0}
+.bio-body strong{color:#f0e2c0;font-weight:500}
+
+.academy-section{background:#0c0a06;border-top:0.5px solid #221e12}
+.academy-inner{max-width:940px;margin:0 auto;padding:5rem 3rem}
+.academy-rule{width:40px;height:1px;background:#3a2808;margin:1.75rem 0}
+.academy-body{font-size:18px;color:#9a8a6a;line-height:1.9;max-width:580px;margin-bottom:2rem}
+.academy-body p{margin-bottom:1rem}
+.academy-body p:last-child{margin-bottom:0}
+
+.closer-section{background:#0a0804;border-top:0.5px solid #1a1608}
+.closer-inner{max-width:640px;margin:0 auto;padding:5.5rem 3rem;text-align:center}
+.closer-line{font-family:'EB Garamond',serif;font-style:italic;font-size:26px;color:#6a5838;line-height:1.55;margin-bottom:3rem}
+.closer-line strong{color:#c2b090;font-style:normal;font-weight:500}
+
+footer{border-top:0.5px solid #1a1608;padding:2.5rem 3rem;text-align:center;background:#0a0804}
+.footer-links{display:flex;justify-content:center;gap:2rem;margin-bottom:1.5rem}
+.footer-links a{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#3a2e18;text-decoration:none;transition:color 0.15s}
+.footer-links a:hover{color:#6b5a38}
+.footer-text{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#2e2810}
+
+@media(max-width:900px){
+  .books-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem}
+  .nav-links{gap:1rem}
+  .nav-links a:not(.nav-cta){display:none}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-right{height:360px}
+  .hero-left{padding:3rem 1.5rem}
+  .book-inner{grid-template-columns:1fr;gap:2rem;padding:3rem 1.5rem}
+  .book-cover{max-width:200px}
+  .work-section,.books-section{padding:3.5rem 1.5rem}
+  .bio-inner{grid-template-columns:1fr;gap:2rem;padding:3.5rem 1.5rem}
+  .bio-photo{max-width:220px}
+  .academy-inner{padding:3.5rem 1.5rem}
+  .lead-inner{padding:3.5rem 1.5rem}
+  .closer-inner{padding:3.5rem 1.5rem}
+  .books-grid{grid-template-columns:1fr}
+  footer{padding:2rem 1.5rem}
+  .footer-links{flex-wrap:wrap;gap:1rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Joe Manzello</a>
+  <div class="nav-links">
+    <a href="/start-here">Start Here</a>
+    <a href="/books">Books</a>
+    <a href="/about">About</a>
+    <a href="/academy">Academy</a>
+    <a href="/free-pdf" class="nav-cta">Free PDF</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Author &nbsp;&middot;&nbsp; Literary Fiction &nbsp;&middot;&nbsp; Nonfiction</p>
+    <h1 class="hero-name">Joe<br>Manzello</h1>
+    <p class="hero-tagline">He writes for the man in the fire.</p>
+    <div class="hero-rule"></div>
+  </div>
+  <div class="hero-right">
+    <img src="images/joe-manzello.jpg" alt="Joe Manzello" />
+    <div class="hero-fade"></div>
+  </div>
+</section>
+
+<section class="book-section">
+  <div class="book-inner">
+    <img class="book-cover" src="images/art-of-detachment-cover.png" alt="The Art of Detachment by Joe Manzello" />
+    <div>
+      <p class="book-label">Available now &mdash; The debut</p>
+      <h2 class="book-title">The Art of<br>Detachment</h2>
+      <p class="book-desc">This book does not comfort you. It confronts you. It is for the man who has held on too long &mdash; to the wrong person, the wrong identity, the wrong version of himself &mdash; and needs a way to let go without going cold.</p>
+      <div class="btn-row">
+        <a href="#" class="btn-primary">Get the book</a>
+        <a href="#" class="btn-ghost">Read an excerpt</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<section class="work-section">
+  <p class="sec-label">The work</p>
+  <h2 class="sec-title">Built from ruin.<br>Written for truth.</h2>
+  <div class="sec-body">
+    <p>Joe Manzello does not write from theory. He writes from <strong>ruin, rebuilding, fatherhood, failure, hunger, and the decision to become stronger instead of staying bitter.</strong></p>
+    <p>His work is about collapse, heartbreak, discipline, detachment, sovereignty &mdash; and becoming dangerous in a clean way after life breaks you open.</p>
+    <p>A reader should feel seen, stripped down, confronted, and rebuilt. The work hits like truth, not entertainment. It makes a man face himself, burn off illusion, and remember that pain can become power if he stops running from it.</p>
+  </div>
+</section>
+
+<hr class="div">
+
+<section class="lead-section" id="free-pdf">
+  <div class="lead-inner">
+    <p class="sec-label">Free download</p>
+    <h2 class="lead-title">The 5 Laws of Detachment</h2>
+    <p class="lead-sub">Five principles forged from the book. Each one a hammer-strike. Each one a question you have to answer honestly. No noise. No selling. Just the work &mdash; delivered free.</p>
+    <form class="lead-form" action="#" method="post">
+      <input type="text" name="first_name" placeholder="Your first name" autocomplete="given-name" required />
+      <input type="email" name="email" placeholder="Your email address" autocomplete="email" required />
+      <button type="submit">Send me the free PDF</button>
+    </form>
+    <p class="lead-note">No spam. No upsells. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<section class="books-section">
+  <p class="sec-label">The universe</p>
+  <h2 class="sec-title">The books</h2>
+  <div class="books-grid">
+    <div class="book-card live">
+      <p class="bc-badge live">Available now</p>
+      <p class="bc-title">The Art of Detachment</p>
+      <p class="bc-desc">Where the journey begins. The discipline of letting go without going cold.</p>
+      <a href="#" class="bc-btn">Get the book &rarr;</a>
+    </div>
+    <div class="book-card">
+      <p class="bc-badge">Coming soon</p>
+      <p class="bc-title">The War Within</p>
+      <p class="bc-desc">The interior war every man must face before he can become anything worth becoming.</p>
+    </div>
+    <div class="book-card">
+      <p class="bc-badge">Coming soon</p>
+      <p class="bc-title">The Trial</p>
+      <p class="bc-desc">When the forge reaches its highest heat &mdash; and you find out what you are made of.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<section class="bio-section">
+  <div class="bio-inner">
+    <img class="bio-photo" src="images/joe-manzello.jpg" alt="Joe Manzello" />
+    <div>
+      <p class="sec-label">The man behind the work</p>
+      <h2 class="sec-title" style="font-size:clamp(28px,4vw,42px);margin-bottom:1.5rem">He didn&rsquo;t become a writer.<br>He was forged into one.</h2>
+      <div class="bio-quote">&ldquo;I do not write from theory. I write from ruin, rebuilding, fatherhood, failure, hunger, and the decision to become stronger instead of staying bitter.&rdquo;</div>
+      <div class="bio-body">
+        <p>Joe Manzello built a trucking company and watched it collapse. He became a father and learned what that word really costs. He hit bottom &mdash; not the poetic version, the actual one &mdash; and chose to come back harder and cleaner instead of bitter.</p>
+        <p>He writes because the books he needed didn&rsquo;t exist. Now they do.</p>
+      </div>
+      <a href="/about" class="btn-ghost" style="margin-top:1.5rem">Read the full story &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="academy-section" id="academy">
+  <div class="academy-inner">
+    <p class="sec-label">Broken Man&rsquo;s Rise Academy</p>
+    <h2 class="sec-title">This is not therapy.<br>Not coaching. Not hype.</h2>
+    <div class="academy-rule"></div>
+    <div class="academy-body">
+      <p>The Academy is a structured brotherhood for men rebuilding from collapse. It demands real work, real honesty, and real accountability.</p>
+      <p>It is not an open door. It is not for everyone. If you are looking for validation or shortcuts, this is the wrong room.</p>
+      <p>If you are ready to do the actual work &mdash; the kind that changes who you are, not just how you feel &mdash; the door is open.</p>
+    </div>
+    <a href="/academy" class="btn-primary">Learn about the Academy</a>
+  </div>
+</section>
+
+<section class="closer-section">
+  <div class="closer-inner">
+    <p class="closer-line">If you&rsquo;re still reading,<br><strong>you already know.</strong></p>
+    <form class="lead-form" style="max-width:380px;margin:0 auto" action="#" method="post">
+      <input type="email" name="email" placeholder="Your email address" autocomplete="email" required />
+      <button type="submit">Enter the world</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="/start-here">Start Here</a>
+    <a href="/books">Books</a>
+    <a href="/about">About</a>
+    <a href="/academy">Academy</a>
+    <a href="/free-pdf">Free PDF</a>
+  </div>
+  <p class="footer-text">&copy; Joe Manzello &nbsp;&middot;&nbsp; All rights reserved &nbsp;&middot;&nbsp; JoeManzello.com</p>
+</footer>
+
+</body>
+</html>
